@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TP1 - Application Facture</string>
+    <string name="username">Username:</string>
+    <string name="connexion">Connexion</string>
+    <string name="password">Password:</string>
+    <string name="connexion_process">Connexion</string>
+    <string name="reset_input">Annuler</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="username_input">Nom d\'utilisateur</string>
+    <string name="facture">Facture</string>
+    <string name="quantity">Quantité</string>
+    <string name="price_input">Prix Unitaire</string>
+    <string name="facture_ht">Montant HT</string>
+    <string name="facture_tva">Taux TVA en %</string>
+    <string name="facture_no_loyalty">Non Fidèle</string>
+    <string name="facture_loyalty">Fidèle</string>
+    <string name="facture_discount">Remise en %</string>
+    <string name="process_facture">Calculer TTC</string>
+    <string name="reset_facture">Remise à zéro</string>
+    <string name="result_ttc_title">Montant TTC</string>
+    <string name="back_input">Retour</string>
+</resources>

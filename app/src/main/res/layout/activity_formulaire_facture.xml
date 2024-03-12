@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:stretchColumns="*"
+        tools:ignore="UselessParent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvTableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:padding="8dp"
+                android:text="@string/facture"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#cc0000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/FactureQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_weight="3"
+                android:autofillHints=""
+                android:hint="@string/quantity"
+                android:inputType="numberDecimal"
+                tools:ignore="LabelFor,TextFields" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/FacturePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_weight="3"
+                android:autofillHints=""
+                android:hint="@string/price_input"
+                android:inputType="numberDecimal"
+                tools:ignore="LabelFor,TextFields" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/FactureTVA"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_weight="3"
+                android:autofillHints=""
+                android:hint="@string/facture_tva"
+                android:inputType="numberDecimal"
+                tools:ignore="LabelFor,TextFields" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/FactureLoyalty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/facture_loyalty"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/FactureNoLoyalty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/facture_no_loyalty"
+                    android:layout_weight="1"
+                    android:checked="true"/>
+
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/FactureDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_weight="3"
+                android:autofillHints=""
+                android:hint="@string/facture_discount"
+                android:inputType="numberDecimal"
+                tools:ignore="LabelFor,TextFields" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btProcessTTC"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/process_facture"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btResetFacture"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_facture"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
